@@ -1,0 +1,62 @@
+.App {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 4px;
+  color: #282c34;
+  font-size: 1em;
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav button:hover {
+  background-color: #4fa8c7;
+}
+
+main {
+  padding: 20px;
+}
+
+.main-content {
+  padding-top: 60px; /* This should match the navbar height */
+  min-height: calc(100vh - 60px);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: calc(var(--header-height) + 10px);
+    padding-left: var(--mobile-padding);
+    padding-right: var(--mobile-padding);
+  }
+
+  nav button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Better touch targets for mobile */
+button, 
+input[type="button"], 
+input[type="submit"] {
+  min-height: 44px;
+  min-width: 44px;
+}
